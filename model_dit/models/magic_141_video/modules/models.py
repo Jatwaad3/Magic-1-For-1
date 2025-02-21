@@ -661,7 +661,7 @@ class Magic141VideoDiffusionTransformer(ModelMixin, ConfigMixin):
         # text modulation
         self.vector_in = MLPEmbedder(
             self.text_states_dim_2, self.hidden_size, **factory_kwargs
-        )s s s
+        )
         self.text_guidance_in = (            
             TimestepEmbedder(
                 self.hidden_size, get_activation_layer("silu"), **factory_kwargs
